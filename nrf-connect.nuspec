@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>nrf-connect</id>
+    <version>3.0.0</version>
+    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <owners>n3rd4i</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>nrf-connect (Install)</title>
+    <authors>Nordic Semiconductor</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop/Download#infotabs</projectUrl>
+    <iconUrl>https://cdn.statically.io/img/www.nordicsemi.com/-/media/Images/Products/SDKs-SoftDevices-APPS/nRF-Connect_desktop.png</iconUrl>
+    <copyright>2019 Nordic Semiconductor</copyright>
+    <!-- If there is a license Url available, it is required for the community feed -->
+    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <docsUrl>https://infocenter.nordicsemi.com/topic/struct_nrftools/struct/nrftools_nrfconnect.html?cp=6_3</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>nrf-connect nrf nordic</tags>
+    <summary>Cross-platform development software for Bluetooth Low Energy and cIoT</summary>
+    <description>
+    ### nRF Connect for Desktop is a cross-platform tool that enables testing and development with Nordic’s products for Bluetooth® Low energy and cellular IoT. It allows easy setup of connections with other devices and uses these connections to read and write the external nodes. 
+    </description>
+    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <!-- =============================== -->      
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <dependencies>
+      <dependency id="autohotkey.portable" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

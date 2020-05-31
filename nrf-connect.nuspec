@@ -4,14 +4,14 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>nrf-connect</id>
-    <version>3.1.0</version>
+    <version>3.3.1</version>
     <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
     <owners>n3rd4i</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>nrf-connect (Install)</title>
+    <title>nRF Connect for Desktop</title>
     <authors>Nordic Semiconductor</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop/Download#infotabs</projectUrl>

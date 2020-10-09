@@ -15,7 +15,7 @@
     <authors>Nordic Semiconductor</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop/Download#infotabs</projectUrl>
-    <iconUrl>https://cdn.statically.io/img/www.nordicsemi.com/-/media/Images/Products/SDKs-SoftDevices-APPS/nRF-Connect_desktop.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/img/www.nordicsemi.com/-/media/Images/Products/APPS/nRF-Connect_desktop.png</iconUrl>
     <copyright>2019 Nordic Semiconductor</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
     <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>

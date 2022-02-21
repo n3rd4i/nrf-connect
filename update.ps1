@@ -1,7 +1,7 @@
 import-module au
 
 $domain   = 'https://www.nordicsemi.com'
-$releases = "$domain/Software-and-tools/Development-Tools/nRF-Connect-for-desktop/Download"
+$releases = "$domain/Products/Development-Tools/nRF-Connect-for-desktop/Download"
 
 function global:au_SearchReplace {
   @{
@@ -14,13 +14,13 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing #1
-  $regex   = 'ia32.exe$'
+  $regex   = '.exe$'
   $url_raw     = $download_page.links | ? href -match $regex | select -First 1 -expand href #2
   $url = ($domain, $url_raw) -Join('')
 
   $token = $url -split 'nRF-Connect-for-Desktop/' | select -First 1 -Skip 1
   $raw_version = [regex]::split($token, '(?:\d+-\d+-\d+)/nrfconnect-setup-') | select -Last 1
-  $version = $raw_version -split '-ia32.exe' | select -First 1
+  $version = $raw_version -split '.exe' | select -First 1
   return @{ Version = $version; URL32 = $url }
 }
 
